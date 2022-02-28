@@ -10,7 +10,7 @@ describe('CI sequence', () => {
   it('the list has a header', () => {
     expect(/.*#.*/ig.test(fileContents)).toBe(true);
   });
- 
+
   it('1. pull latest code', () => {
     expect(/.*pull.*/ig.test(fileContents)).toBe(true);
   });
@@ -26,6 +26,4 @@ describe('CI sequence', () => {
   it('4. open a pull request and continue working', () => {
     expect(/.*pull\s+request.*/ig.test(fileContents)).toBe(true);
   });
-  
-
 });
