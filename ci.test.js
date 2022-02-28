@@ -41,6 +41,6 @@ describe('CI sequence', () => {
 
   it('does not contain the sneaky bug', () => {
     expect( /.*sneaky\s+bug.*/gi.test(fileContents)).toBe(false);
-  });
 
+  });
 });
